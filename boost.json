@@ -13,7 +13,9 @@
         "spatie/laravel-permission",
         "spatie/laravel-sluggable",
         "spatie/laravel-medialibrary",
-        "spatie/laravel-query-builder"
+        "spatie/laravel-query-builder",
+        "spatie/guidelines-skills",
+        "fruitcake/laravel-debugbar"
     ],
     "sail": false,
     "skills": [
@@ -27,6 +29,11 @@
         "medialibrary-development",
         "laravel-permission-development",
         "laravel-query-builder",
-        "sluggable-development"
+        "sluggable-development",
+        "debug-using-debugbar",
+        "spatie-javascript",
+        "spatie-laravel-php",
+        "spatie-security",
+        "spatie-version-control"
     ]
 }

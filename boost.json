@@ -12,7 +12,8 @@
     "packages": [
         "spatie/laravel-permission",
         "spatie/laravel-sluggable",
-        "spatie/laravel-medialibrary"
+        "spatie/laravel-medialibrary",
+        "spatie/laravel-query-builder"
     ],
     "sail": false,
     "skills": [
@@ -23,6 +24,7 @@
         "tailwindcss-development",
         "medialibrary-development",
         "laravel-permission-development",
+        "laravel-query-builder",
         "sluggable-development"
     ]
 }

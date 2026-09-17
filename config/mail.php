@@ -97,6 +97,10 @@ return [
             'retry_after' => 60,
         ],
 
+        'resend' => [
+            'transport' => 'resend',
+            'key' => env('RESEND_API_KEY'),
+        ],
     ],
 
     /*

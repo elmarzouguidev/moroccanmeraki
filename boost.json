@@ -21,6 +21,8 @@
         "deploying-to-cloud",
         "laravel-best-practices",
         "testing-best-practices",
+        "scout-development",
+        "socialite-development",
         "tailwindcss-development",
         "medialibrary-development",
         "laravel-permission-development",

@@ -9,12 +9,20 @@
     "guidelines": true,
     "mcp": true,
     "nightwatch": false,
+    "packages": [
+        "spatie/laravel-permission",
+        "spatie/laravel-sluggable",
+        "spatie/laravel-medialibrary"
+    ],
     "sail": false,
     "skills": [
         "infer-conventions",
         "deploying-to-cloud",
         "laravel-best-practices",
         "testing-best-practices",
-        "tailwindcss-development"
+        "tailwindcss-development",
+        "medialibrary-development",
+        "laravel-permission-development",
+        "sluggable-development"
     ]
 }

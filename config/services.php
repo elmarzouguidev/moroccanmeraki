@@ -45,4 +45,10 @@ return [
         'client_secret' => env('GOOGLE_CLIENT_SECRET'),
         'redirect' => env('GOOGLE_REDIRECT_URI'),
     ],
+
+    'exchange_rate' => [
+        'api_key' => env('EXCHANGE_RATE_API_KEY'),
+        'cache_duration' => env('EXCHANGE_RATE_CACHE_DURATION', 3600), // 1 hour
+        'default_currency' => env('DEFAULT_CURRENCY', 'USD'),
+    ],
 ];

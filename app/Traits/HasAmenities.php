@@ -2,7 +2,7 @@
 
 namespace App\Traits;
 
-use App\Models\Utilities\Amenity;
+use App\Models\Tools\Amenity;
 use Illuminate\Database\Eloquent\Relations\MorphToMany;
 
 trait HasAmenities

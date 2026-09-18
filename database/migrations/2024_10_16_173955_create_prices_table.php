@@ -23,8 +23,8 @@ return new class extends Migration
 
             $table->string('currency', 3)->default(CurrencyType::USD->value); // ISO 4217 currency codes are 3 chars
 
-            $table->unsignedBigInteger('price')->default(0);
-            $table->unsignedBigInteger('discount_price')->default(0);
+            $table->unsignedBigInteger('amount')->default(0);
+            $table->unsignedBigInteger('discount_amount')->default(0);
 
             $table->json('options')->nullable();
 

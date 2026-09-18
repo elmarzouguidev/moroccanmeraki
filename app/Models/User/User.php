@@ -5,21 +5,24 @@ namespace App\Models\User;
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 
 use App\Traits\GetModelByKeyName;
+use App\Traits\HasTrustedTwoFactorDevices;
+use App\Traits\HasTwoFactorAuthentication;
 use App\Traits\UuidGenerator;
 use Database\Factories\User\UserFactory;
-use Illuminate\Database\Eloquent\Attributes\Fillable;
+
 use Illuminate\Database\Eloquent\Attributes\Hidden;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Spatie\Permission\Traits\HasRoles;
 
-#[Fillable(['name', 'email', 'password'])]
 #[Hidden(['password', 'remember_token'])]
 class User extends Authenticatable
 {
     /** @use HasFactory<UserFactory> */
     use HasFactory, Notifiable , GetModelByKeyName,HasRoles,UuidGenerator;
+    use HasTwoFactorAuthentication;
+    use HasTrustedTwoFactorDevices;
 
     /**
      * Get the attributes that should be cast.
